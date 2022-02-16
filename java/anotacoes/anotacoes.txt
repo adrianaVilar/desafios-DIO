@@ -1,3 +1,12 @@
+# Aula 01
+
+para compilar o arquivo da IDE, se usa o gitBash, por exemplo:
+javac -d target/ -sourcepath src/ src/com/dio/MyFirstProject.java
+_dessa forma vai ser criada a pasta "target" (o arquivo.java vai ser criado uma copia .class na pasta target)_
+para executar o programa da IDE, continua no git bash. por exemplo:
+retorna para o diretorio raiz, e usa: java com.dio.MyFirstProject
+ou executa esse codigo na IDE mesmo
+
 # Aula 02
 
 ## Declaração de classes
