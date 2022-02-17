@@ -106,13 +106,38 @@ A JDK faz parte do funcionamento das IDE's
 ## Eclipse
 
 *Atalhos*
-F2: renomear arquivos/pastas
-Ctrl + N: novo
-Ctrl + ou -: aumentar ou diminuir a fonte, respectivamente
-Ctrl + espaço: mostra as opções de completar
-Ctrl + 3: lupa
-Ctrl + D: apaga a linha
-Alt + setas: altera a linha ou bloco de lugar (pra cima ou pra baixo)
-Ctrl + Shift + S: arruma formatacao
-Ctrl + Shift + O: importa as classes criadas
+F2: renomear arquivos/pastas;
+Ctrl + N: novo;
+Ctrl + ou -: aumentar ou diminuir a fonte, respectivamente;
+Ctrl + espaço: mostra as opções de completar;
+Ctrl + 3: lupa;
+Ctrl + D: apaga a linha;
+Alt + setas: altera a linha ou bloco de lugar (pra cima ou pra baixo);
+Ctrl + Shift + S: arruma formatacao;
+Ctrl + Shift + O: importa as classes criadas.
+
+
+## Inteliij
+
+*Atalhos*
+Alt + Insert: criar novo (se clicado quando o seletor do mouse estiver em cima de uma pasta);
+Ctrl + Shift + F10: para rodar o código no terminal da IDE pela primeira vez;
+Shift + F10: para rodar depois da primeira vez;
+Ctrl + Shift + /: comenta o bloco que está selecionado;
+Ctrl + Alt + O: limpa os "imports" que não estão sendo utilizados no código;
+Ctrl + Y: deletar linha;
+Ctrl + Z: desfazer;
+Shift + F6: refatorar o nome da classe/renomear pasta;
+Ctrl + Alt + L: organizar o código (espaçamentos);
+Ctrl + D: duplica a linha;
+Ctrl + Shift + seta: muda a linha pra cima ou pra baixo;
+Ctrl + K: segundo commit por dentro da IDE;
+Ctrl + Alt + V: escreve na linha qual é o tipo de variável;
+F8: Step over (pular os passos);
+F7: Step into (forçar);
+Shift + F8: Voltar;
+Alt + F9: run to cursor;
+Ctrl + F4: fecha abas;
+Ctrl + N: encontrar classes;
+Ctrl + B: entra na classe que o mouse está em cima;
 

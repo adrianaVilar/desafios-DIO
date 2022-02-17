@@ -13,9 +13,9 @@ public class Calculadora {
         System.out.println("Digite o segundo valor: ");
         b = scan.nextInt();
 
-        int somar = somar(a, b);
-        int subtrair = subtrair(a, b);
-        int multiplicar = multiplicar(a, b);
+        double somar = somar(a, b);
+        double subtrair = subtrair(a, b);
+        double multiplicar = multiplicar(a, b);
         double dividir = dividir(a, b);
 
         System.out.println("soma: " + somar);
@@ -24,19 +24,19 @@ public class Calculadora {
         System.out.println("div: " + dividir);
     }
 
-    public static int somar (int a, int b) {
+    public static double somar (double a, double b) {
         return a + b;
     }
 
-    public static int subtrair (int a, int b) {
+    public static double subtrair (double a, double b) {
         return a - b;
     }
 
-    public static int multiplicar (int a, int b) {
+    public static double multiplicar (double a, double b) {
         return a * b;
     }
 
-    public static double dividir (int a, int b) {
+    public static double dividir (double a, double b) {
         return a / b;
     }
 }
