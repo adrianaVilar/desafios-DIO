@@ -1,6 +1,6 @@
 # Aula 01
 
-para compilar o arquivo da IDE, se usa o gitBash, por exemplo:
+para compilar o arquivo da IDE, se usa o gitBash ou cmd, por exemplo:
 javac -d target/ -sourcepath src/ src/com/dio/MyFirstProject.java
 _dessa forma vai ser criada a pasta "target" (o arquivo.java vai ser criado uma copia .class na pasta target)_
 para executar o programa da IDE, continua no git bash. por exemplo:
@@ -78,3 +78,23 @@ ferramenta para documentação em HTML
 @since
 @throws
 @version
+
+
+# Teoria:
+
+## JDK (Java Development Kit) - compila o código-fonte (.java)
+## JVM (Java Virtual Machine) - executa o bytecode (.class)
+## JRE (Java Runtime Environment) - ambiente de execução que permite que o JDK compile o código e a JVM execute.
+
+
+## Versões do Java
+
+OpenJDK: gratuita (existem outras, mas essa é muito usada)
+JDK Oracle: requer licença da Oracle
+LTS: java de longo suporte (as intermediárias são beta)
+
+
+## IDE
+
+"Ambiente de desenvolvimento integrado": é o "editor de texto" do código
+A JDK faz parte do funcionamento das IDE's
