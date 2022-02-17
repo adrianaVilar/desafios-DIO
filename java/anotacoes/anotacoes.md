@@ -3,6 +3,9 @@
 para compilar o arquivo da IDE, se usa o gitBash ou cmd, por exemplo:
 javac -d target/ -sourcepath src/ src/com/dio/MyFirstProject.java
 _dessa forma vai ser criada a pasta "target" (o arquivo.java vai ser criado uma copia .class na pasta target)_
+ou entra na pasta do arquivo a ser compilado e usa:
+javac MyFirstProject.java
+_dessa forma vai ser criado o MyFirstProject.class
 para executar o programa da IDE, continua no git bash. por exemplo:
 retorna para o diretorio raiz, e usa: java com.dio.MyFirstProject
 ou executa esse codigo na IDE mesmo
@@ -98,3 +101,18 @@ LTS: java de longo suporte (as intermediárias são beta)
 
 "Ambiente de desenvolvimento integrado": é o "editor de texto" do código
 A JDK faz parte do funcionamento das IDE's
+
+
+## Eclipse
+
+*Atalhos*
+F2: renomear arquivos/pastas
+Ctrl + N: novo
+Ctrl + ou -: aumentar ou diminuir a fonte, respectivamente
+Ctrl + espaço: mostra as opções de completar
+Ctrl + 3: lupa
+Ctrl + D: apaga a linha
+Alt + setas: altera a linha ou bloco de lugar (pra cima ou pra baixo)
+Ctrl + Shift + S: arruma formatacao
+Ctrl + Shift + O: importa as classes criadas
+
