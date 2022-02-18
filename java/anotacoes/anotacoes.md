@@ -141,3 +141,96 @@ Ctrl + F4: fecha abas;
 Ctrl + N: encontrar classes;
 Ctrl + B: entra na classe que o mouse está em cima;
 
+
+
+# Variáveis, Tipo de dados e Operadores Matemáticos em Java
+
+## Variável:
+Um espaço na memória que armazena valores
+
+*Tipos:*
+Instância: objeto;
+Classe: classe;
+Local: dentro de métodos;
+Parâmetro: na assinatura do método.
+
+Padrão de definição:
+<?visibilidade?><?modificador?> tipo nome <?=valorInicial?>;
+
+V: public, protected ou private;
+M: static ou final (quando usar o final, o valor vai ser aquele sempre. se desejar mudar, vai ter erro de compilação);
+T: tipo de dado (obrigatório!);
+N: nome da variável (obrigatório!);
+VI: valor inicial.
+
+- Não pode começar com números;
+- Evitar usar "$" e "_";
+- É case-sensitive (diferencia maiúsculo e minúsculo);
+- Não pode usar espaço no nome da variável;
+- Não pode usar as palavras reservadas.
+
+*Boas práticas*
+- Sempre iniciar com letra minúscula;
+- Nomes expressivos em notação camelo;
+- Qdo a variável for final (constante), usar tudo maiúsculo e separado por "_".
+
+
+## Tipo de dados
+São valores e operações que as variáveis podem assumir e sofrer
+
+*Tipos*
+Estática(forte: java é fortemente tipada) ou dinâmica (fraca);
+Compilada ou interpretada (java é as duas);
+Primitivo (números, texto...) ou composto (ligado a orientação objeto).
+
+*Opções de tipos*
+Textual, numeral, lógico ou objeto.
+
+*Exemplos de numeral*
+byte: -128 até 127 -> byte b=15;
+short: -32.768 até 32.767 -> short s=-15785;
+int: -2.147.483 até 2.147.483.647 -> int i = 8515785; (inteiro de 32 bits)
+long: -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807 -> long l=5938515785L; (inteiro de 64 bits)
+float: +- 3.40282347E+38F -> float f=3.14...(f); (reais de 32 bits)
+double: +- 1.79769313486231570E+308 -> double d=3.14...(d); (reais de 64 bits)
+
+*Exemplos textuais*
+char: usa aspas simples, pq é caracter isolado. é pouco usado
+String: não é primitivo! é um objeto, mas usa como primitivo
+
+*Exemplos lógicos*
+true or false
+
+*Valores default*
+os valores possuem valores default para evitar que se acesse alguma "sujeira" da memória erroneamente
+
+
+## Operadores aritméticos
+São símbolos capazes de realizar ações específicas e retornar um resultado
+
+*Tipos*
+pós-fixado: exp++ ou exp--;
+prefixado: ++exp ou --exp;
+aritmético: +, -, *, /, % (resto da divisão);
+atribuição: =, +=, -=, *=, /= e %=.
+
+*Precedências ou "Preferência"  na execução*
+pós-fixado
+prefixado
+aritmético: *, /, %
+aritmético: +, -
+atribuição
+
+
+## Conversões (casting)
+Transformar uma variável de um tipo mais ou menos específico para outro menos ou mais específico
+
+*Tipos*
+Upcast (implícito ou pra cima ou promoção): a variável sai de um "espaço" menor para um maior, então não corre o risco de perder dados;
+Downcast(explícito ou de menor capacidade, pode ser que perca dados).
+_pode ser feito em tipos primitivos ou compostos_
+Exemplo:
+Long l; tranformar em int i=10 em long l=i; - não perde nada
+int i; long l=100; i=(int) l; - pode ser que perca, pq sai do long para o int, então precisa identificar qual vai ser a transformação
+
+_truncar_: termo para quando temos um float (real) e convertemos para um int (inteiro) e o número é arredondado.
