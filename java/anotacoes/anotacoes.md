@@ -297,4 +297,66 @@ Se o método for "void", pode ou não ter retorno, mas se tiver, vai ser vazio (
 
 
 
+# Lógica Condicional e Controle de Fluxos em Java
 
+# Operadores relacionais
+São símbolos usados para comparar determinados operandos e retornar um resultado.
+
+*Tipos:*
+Similaridade: igual (==), diferente (!=);
+Tamanho: maior, menor, igual, maior ou igual, menor ou igual
+Sempre haverão 2 operandos
+
+
+# Operadores lógicos
+São símbolos usados para comparar operandos lógicos ou expressões e retornar um resultado (não é possível comparar números, por ex)
+
+*Tipos:*
+Conjunção: é verdadeira quando ambos os operadores são verdadeiros (&&, and, e);
+Disjunção: é falsa quando ambos são falsos (||, or, ou);
+Disjunção exclusiva: é verdade quando ambos são opostos (^, xor)
+Negação: inverte o valor lógico (!, inversão: se é falso, fica verdadeiro, se é verdadeiro, fica falso).
+
+*Curiosidades:*
+Operadores bitwise: & e | - não são operadores lógicos
+Operadores shift: ~, >>, >>>, <<
+
+*Boas práticas*
+Criar variáveis auxiliares para guardar resultados intermediários
+
+
+# Controle de fluxo
+São estruturas que tem capacidade de direcionar o fluxo da execução do código
+
+*Tipos:*
+Decisão: if, if-else, if-else-if (esses 3 usam comparações entre booleanos), switch (compara valores exatos ou casos com variáveis - mais comuns: int, string e enum. Usar "default" ao final) e operador ternário ("condição ? true : false;" PORÉM, é para EVITAR usar operador ternário);
+Repetição: for, while, do while;
+Interrupção: break, continue, return.
+
+*Boas práticas*
+Evitar usar default do switch para cases genéricos
+Evitar efeito flecha usando if (ir aninhando para o lado, de forma que saia da visualização da tela)
+
+
+## Blocos
+É um grupo de 0 ou mais códigos que trabalham em conjunto para executar uma operação
+
+*Tipos:*
+Locais: dentro de métodos (ex.: main);
+Estáticos: dentro de classes;
+Instância: dentro de classes.
+
+*Ex.*
+Locais {
+...
+}
+
+if (autorizado) {
+Carregar perfil
+DirecionarPaginaPrincipal
+}
+
+if (menorIdade)
+DirecionarPessoa
+
+_se só houver uma linha de código, não precisa de {}_
