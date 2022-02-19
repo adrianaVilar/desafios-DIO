@@ -234,3 +234,67 @@ Long l; tranformar em int i=10 em long l=i; - não perde nada
 int i; long l=100; i=(int) l; - pode ser que perca, pq sai do long para o int, então precisa identificar qual vai ser a transformação
 
 _truncar_: termo para quando temos um float (real) e convertemos para um int (inteiro) e o número é arredondado.
+
+
+# Métodos Java
+É uma porção do código (sub-rotina) que é disponibilizada por uma classe (sempre é criado dentro de uma classe, se usa a palavra "static" na método para chamar ele do main depois) e é executado quando é feita uma requisição para ele. São responsáveis por definir e realizar um determinado comportamento.
+
+## Criação
+<?visibilidade?> <?tipo?> <?modificador?> retorno nome (<?parâmetros?>) <?exceções?> corpo
+*Ex.*:
+V: public, protectes ou private;
+T: concreto ou abstrato;
+M: static ou final;
+R: tipo de dados ou void (vazio, ou seja, só executa, mas não retorna nada);
+N: nome que é fornecido ao método;
+P: parâmetros que pode receber;
+E: exceções que pode lançar;
+C: código que possui ou vazio, fica dentro de {} ou termina só com o ; quando for vazio.
+*T, M e E não são tão usados
+
+## Utilização
+Se uma mensagem através de uma classe ou objeto:
+nome_da_classe/objeto.nome_do_metodo() -> sem parâmetros
+nome_da_classe/objeto.nome_do_metodo(...) -> com parâmetros
+
+*Ex.*
+Math.random()
+Math.sqrt(4) -> raiz quadrada
+
+_Classe Começa Com Maiúscula_
+_objeto começa com minúscula_
+
+## Particularidades
+
+*Assinatura:* É a forma de identificar o método. => nome+parâmetros
+*Construtor e destrutor:* usados na orientação a objetos
+*Mensagem:* para solicitar que o método seja executado
+*Passagem e parâmetros:* por valor/cópia ou por referência/endereço (OO)
+
+## Boas práticas
+Nomes: descritivos e curtos;
+Notação: camel case;
+Deve possuir entre 80 e 120 linhas - pode ser que se precise usar métodos auxiliares dentro dos métodos principais para diminuir o número de linhas;
+Evite lista de parâmetros longas;
+Visibilidades adequadas.
+
+
+# Sobrecarga de métodos
+É a capacidade de definir métodos para diferentes contextos, mas preservando seu nome: mesmo método, funcionando de formas diferentes conforme o contexto (mudam os parâmetros ou assinatura (nome+parâmetros))
+*Ex.*: converterParaInteiro ou então pegar um objeto e retornar a string dele
+*Sobrecarga x Sobrescrita*: são coisas diferentes! Sobrescrita tem a ver com herança
+
+
+# Retornos
+É uma instrução de interrupção; Simbologia: return
+O método executa o retorno quando completa todas as instruções internas, chega numa declaração explícita de retorno ou lança uma exceção (erro);
+
+É definido na criação e pode ser primitivo ou objeto;
+
+Deve ser compatível com o método;
+
+Se o método for "void", pode ou não ter retorno, mas se tiver, vai ser vazio (só termina com ;, por exemplo).
+
+
+
+
