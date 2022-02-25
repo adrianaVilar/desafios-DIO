@@ -360,3 +360,26 @@ if (menorIdade)
 DirecionarPessoa
 
 _se só houver uma linha de código, não precisa de {}_
+
+
+
+# Estruturas de repetição e arrays em java
+
+# E.R.: cada repetição é chamada de laço (loop): permite que uma sequência de comandos seja executada enquanto as condições forem satisfeitas;
+*While*: repetição com teste no início - se usa quando precisa ser uma condição válida para iniciar a repetição;
+*Do-while*: Repetição com teste no final, usa quando precisa executar pelo menos uma vez e depois verificar - usa pouco;
+*For*: Repetição contada - usa quando precisar de contador;
+*Break*: termina de forma abrupta uma repetição;
+*Continue*: os comandos após o continue não são executados. Só pode ser usado dentro de uma estrutura de repetição - Existe, mas não é utilizado.
+
+*Operadores de incremento e decremento*: ++num e --num _pré-fixados_
+num++ e num-- _pós-fixados_
+
+*Operações aritméticas*: numero += k é o mesmo que numero = numero + k
+
+*Arrays*: é um objeto utilizado para armazenar sequencialmente dados do mesmo tipo.
+Precisamos definir um *tamanho máximo* para o array (em java). Por ex., dizer que o tamanho é 10 e colocar 5 elementos, só não pode colocar que é 10 e ter 11 elementos;
+Pode ser unidimencional ou multidimencional. Ex.: c[0]: array c, índice 0; ou a [0][1]: array a, índice da linha 0, índice da coluna 1.
+
+
+
