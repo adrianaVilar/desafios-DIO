@@ -382,4 +382,51 @@ Precisamos definir um *tamanho máximo* para o array (em java). Por ex., dizer q
 Pode ser unidimencional ou multidimencional. Ex.: c[0]: array c, índice 0; ou a [0][1]: array a, índice da linha 0, índice da coluna 1.
 
 
+# Programação Orientada a Objetos
+É um paradigma de análise, projeto e programação de sistemas de softwares baseado na composição e interação entre diversas unidades de software chamadas de objetos.
+
+## PE vs POO
+*Paradigma Estruturado:* limitado, foca em "como fazer";
+*Paradigma Orientado a Objetos:* mais complexa, maior nível de abstração, em foca em "o que fazer"; Melhor coesão (ideias trabalhando em conjunto, com unidades de códigos com responsabilidades únicas); melhor acoplamento; diminui o Gap semântico; coletos de lixo (vai liberando a memória conforme a informação nao for usada).
+
+## Fundamentos
+*Abstração:* pensar nas características essenciais e comuns de certos grupos que podem ser reutilizadas; características acidentais são add depois;
+*Reuso:* novas unidades de código a partir de outras já existentes;
+*Encapsulamento:* esconder complexidades e proteger dados.
+
+## Estruturas:
+
+*Classe:* são entidades do mundo real, concretos ou abstratos (bola, carro, venda,...) que têm nomes significativos de acordo com o contexto; é a unidade mínima e básica do POO que possui características similares, define o comportamento dos objetos através de métodos e os possíveis estados desses objetos através dos atributos. Vai ter vários objetos; _sempre se usa a delimitação de escopo {}_
+Ex: class Carro {
+...}
+
+*Atributos:* elemento que define a estrutura de dados. Faz parte dos objetos da classe;
+Ex: Carro: cor, marca.
+_variável_: pode variar, tem um ciclo de vida mais curto. usa durante a operação dentro do código; para representar o conceito se usa o atributo.
+
+*Método:* é uma porção de código (sub-rotina) que identifica as ações e serviços que a classe oferece.
+Ex.: Carro: ligar, correr. Para criar, se usa visibilidade, retorno, nome e parâmetros (se precisar).
+class Carro {
+void frear ( ) {
+...
+  }
+}
+_Métodos especiais_:
+Construtor: cria objetos a partir das classes, tem obrigatóriamente o mesmo nome da classe. Pode ser também para passar parâmetros para os atributos. Nas BP fica embaixo dos atributos;
+Destrutor: auxilia a destruição dos objetos, por ex. no coletor de lixo, ele chama os destrutores para liberar o espaço na memória. Usa quando o sistema for usar portas seriais no computador ou precisar liberar algum outro recurso
+class Carro {
+void finelize () {
+  }
+}
+Sobrecarga: 
+mudar a assinatura (nome+ prâmetros) conforme a necessidade.
+Ex.:
+m1 ()
+m1 (int i)
+m1 (float f)
+m1 (String s, long l)
+Usa por exemplo numa compra usar um "calcularTotal", depois se a compra tiver desconto ou se for parcelada usar o mesmo método.
+
+*Objeto:* 
+
 
