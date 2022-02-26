@@ -427,6 +427,73 @@ m1 (float f)
 m1 (String s, long l)
 Usa por exemplo numa compra usar um "calcularTotal", depois se a compra tiver desconto ou se for parcelada usar o mesmo método.
 
-*Objeto:* 
+*Objeto:* é a representação de um conceito/entidade do mundo real (físico ou não);
+Como criar:
+Carro carro = new Carro () ;
+Tipo - objeto - construtor ^
+
+*Mensagem:* solicitação para ativar um método;
+Carro carro = new Carro ();
+carro.<método>; - _objeto_
+Carro.<método>; - _classe_
+
+
+## Relações
+
+# Herança
+Uma subclasse (classe filha, classe derivada) que é uma extensão de uma superclasse (classe pai, mãe ou base); cria subtipos mais especializados dos que os já existentes; "membros" são os atributos e métodos;
+Como criar:
+class A extends B {
+...
+}
+Ou seja, A é mais específica do que B, é um subtipo de B, herda B.
+
+*Tipos:*
+Simples: 1 classe filha tem 1 classe mãe
+Múltipla: 1 classe filha tem 2 ou mais classes mãe -> *Não existe herança múltipla em java*
+Upcast e Downcast: Up é quando uma classe filha vira classe mãe; Down é quando a classe mãe vira filha.
+Upcast: A a = new B();
+Downcast: B a = (B) new A ();
+
+*Polimorfismo:*
+A mesma ação, se comportando diferente. Geralmente se usa com herança.
+Por ex.: pagamento pode ser com débito, crético, boleto, pix
+
+*Sobrescrita:*
+A mesma ação, podendo se comportar diferente.
+Por ex.: uma conta que pode ser corrente, poupança, especial ou universitária que apresente um saldo. O saldo pode ou não ser o mesmo (poupança pode render, cheque especial pode cobrar coisas a mais);
+
+# Associação
+Possibilita um relacionamento entre classes/objetos entre si (um uso o outro). Para saber usar: um USA o outro, mas não são a mesma coisa.
+
+*Tipos:*
+Estrutural: composição ou agregação (relacionado aos atributos);
+Comportamental: dependência (relacionado aos métodos).
+
+*Estrutural*
+
+Composição: a "parte" só existe com o "todo". Por exemplo, uma pessoa tem um endereço. Se a pessoa sair do código, o endereço também sai.
+class Pessoa {
+	Endereço endereço
+}
+
+Agregação/Estrutural: não existe um vínculo tão forte. Ex.: Disciplina e aluno. Se não houver a disciplina ou o aluno, pode haver outra disciplina ou outro aluno
+class Disciplina {
+	Aluno aluno
+}
+
+*Comportamental*
+O método depende do objeto.
+class Compra {
+...
+finalizar (Cupom cupom, ...) {
+...
+}
+}
+
+
+
+#Interface
+
 
 

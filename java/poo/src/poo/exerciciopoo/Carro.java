@@ -1,51 +1,51 @@
 package poo.exerciciopoo;
 
-public class Carro {
-    public static void main(String[] args) {
-        String cor;
-        String modelo;
-        int capacidadeTanque;
+import poo.exerciciopoo.Carro;
 
-      /*  Carro(){
+/**
+ * Classe de exemplo para o exercício da Aula 2 de Orientação a Objetos.
+ */
+class Carro {
 
-        }*/
+    String cor;
+    String modelo;
+    int capacidadeTanque;
 
-      /*  Carro(String cor, String modelo, int capacidadeTanque){
-            this.cor = cor;
-            this.modelo = modelo;
-            this.capacidadeTanque = capacidadeTanque;
+    Carro(String cor, String modelo, int capacidadeTanque) {
+        this.cor = cor;
+        this.modelo = modelo;
+        this.capacidadeTanque = capacidadeTanque;
+    }
 
-        }*/
+    public Carro() {
 
-        void setCor(String cor){
-            this.cor = cor;
-        }
+    }
 
-        String getCor() {
-            return cor;
-        }
+    void setCor(String cor) {
+        this.cor = cor;
+    }
 
-        void setModelo() {
-            this.modelo = modelo;
-        }
+    String getCor() {
+        return cor;
+    }
 
-        String getModelo() {
-            return modelo;
-        }
+    void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
-        void setCapacidadeTanque(int capacidadeTanque) {
-            this.capacidadeTanque = capacidadeTanque;
-        }
+    String getModelo() {
+        return modelo;
+    }
 
-        int getcapacidadeTanque() {
-            return capacidadeTanque;
-        }
+    void setCapacidadeTanque(int capacidadeTanque) {
+        this.capacidadeTanque = capacidadeTanque;
+    }
 
-        double totalValorTanque(double valorCombustivel) {
-            return capacidadeTanque * valorCombustivel;
-        }
+    int getCapacidadeTanque() {
+        return capacidadeTanque;
+    }
+
+    double totalValorTanque(double valorCombustivel) {
+        return capacidadeTanque * valorCombustivel;
     }
 }
-
-
-
