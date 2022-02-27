@@ -464,7 +464,7 @@ A mesma ação, podendo se comportar diferente.
 Por ex.: uma conta que pode ser corrente, poupança, especial ou universitária que apresente um saldo. O saldo pode ou não ser o mesmo (poupança pode render, cheque especial pode cobrar coisas a mais);
 
 # Associação
-Possibilita um relacionamento entre classes/objetos entre si (um uso o outro). Para saber usar: um USA o outro, mas não são a mesma coisa.
+Possibilita um relacionamento entre classes/objetos entre si (um usa o outro). Para saber usar: um USA o outro, mas não são a mesma coisa.
 
 *Tipos:*
 Estrutural: composição ou agregação (relacionado aos atributos);
@@ -494,6 +494,42 @@ finalizar (Cupom cupom, ...) {
 
 
 #Interface
+Necessário para determinado sistema funcionar.
+interface A {
+...
+}
+class B implements A {
+...
+}
 
+
+# Pacotes
+Organização física ou lógica que separa classes com responsabilidades distintas.
+package ... ;
+import ... ; -> para uma exergar uma classe que esteja em outro pacote
+
+
+# Visibilidade ou Modificador de acesso
+Determina até que ponto a classe, atributo ou método pode ser usado.
+
+## Tipos
+*Private:* só se enxerga dentro da classe
+private
+
+private int i;
+private void do ();
+
+
+*Protected:* enxerga dentro da classe, mesmo pacote e subclasses
+protected
+
+protected int i;
+protected void do ();
+
+*Public:* tudo é visível em qualquer lugar da aplicação
+public
+
+public int i;
+public void do ();
 
 
