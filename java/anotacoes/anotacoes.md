@@ -464,7 +464,7 @@ A mesma ação, podendo se comportar diferente.
 Por ex.: uma conta que pode ser corrente, poupança, especial ou universitária que apresente um saldo. O saldo pode ou não ser o mesmo (poupança pode render, cheque especial pode cobrar coisas a mais);
 
 # Associação
-Possibilita um relacionamento entre classes/objetos entre si (um usa o outro). Para saber usar: um USA o outro, mas não são a mesma coisa.
+Possibilita um relacionamento entre classes/objetos OU ATRIBUTOS E MÉTODOS? VER! entre si (um usa o outro). Para saber usar: um USA o outro, mas não são a mesma coisa.
 
 *Tipos:*
 Estrutural: composição ou agregação (relacionado aos atributos);
@@ -531,5 +531,57 @@ public
 
 public int i;
 public void do ();
+
+
+# Pilares da Orientação a Objetos em Java
+
+##Abstração:
+Focar nos aspectos essenciais e ignorar características menos importantes ou acidentais.
+
+##Encapsulamento:
+Esconder a implementação dos objetos para criar interfaces de uso mais concisas e fáceis de usar/entender.
+
+##Herança:
+Uma classe filha que herda ou modifica o comportamento de uma classe pai.
+
+##Polimorfismo:
+Capacidade de um objeto ser referenciado de várias formas (de acordo com o contexto). Ex.: conta, conta corrente e conta poupança.
+
+
+#Collections
+É um objeto que agrupa múltiplos elementos (variáveis primitivas ou objetos) dentro de uma única unidade;
+Armazena e processa coleções de dados de forma eficiente;
+
+## Estrutura:
+*Interface*
+*Implementações ou classe*
+*Algoritmos*
+
+## Interface list
+java.util.List (essa é a chamada da interface)
+Características: garante a ordem de inserção dos elementos, mesmo que sejam duplicados
+
+*ArrayList*: deve ser usado quando mais operações de pesquisa são necessárias;
+*LinkedList*: deve ser usado onde mais operações de inserção e exclusão são necessárias.
+
+*Ex.:*
+Adicionar: nomedacollection.add(posição, valor)
+Substituir: nomedacolletion.set(posição, valor)
+Ver se existe na lista: nomedacollection.contains(valor)
+Passar a posição e receber elemento: nomedacolletion.get(posição)
+Exibir menor valor: Collections.min(nomedacollection)
+Exibir maior valor: Collections.max(nomedacollection)
+Exibir soma: precisa fazer uma iteração;
+Remover uma nota: nomedacollection.remove(0d) => vai remover o valor double
+Remover uma posição: nomedacollection.remove(0) => vai remover a posição 0
+Apagar toda a lista: nomedacollection.clear();
+Retornar se a lista está vazia: nomedacollection.isEmpty();
+Para ordenar: usar o método Comparable
+
+
+
+
+
+
 
 
